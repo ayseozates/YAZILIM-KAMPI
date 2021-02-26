@@ -18,5 +18,8 @@ namespace Business.Constants
         public static string Deleted = "Silme başarı ile gerçekleşti";
 
         public static string Updated = "Güncelleme işlemi başarılı";
+        public static string CarCountOfColorError = "Aynı Renkten en fazla 10 araba olabilir";
+        public static string CarNameAlreadyExists = "Bu isimde başka bir araba var";
+        public static string ColorLimitExceded = "Color limiti aşıldığı için yeni araba eklenemiyor";
     }
 }
