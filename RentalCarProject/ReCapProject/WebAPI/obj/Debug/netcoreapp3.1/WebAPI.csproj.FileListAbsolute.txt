@@ -139,3 +139,5 @@ D:\YAZILIM KAMPI\RentalCarProject\ReCapProject\WebAPI\obj\Debug\netcoreapp3.1\We
 D:\YAZILIM KAMPI\RentalCarProject\ReCapProject\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.pdb
 D:\YAZILIM KAMPI\RentalCarProject\ReCapProject\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.genruntimeconfig.cache
 D:\YAZILIM KAMPI\RentalCarProject\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\FluentValidation.dll
+D:\YAZILIM KAMPI\RentalCarProject\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Http.Features.dll
+D:\YAZILIM KAMPI\RentalCarProject\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\System.IO.Pipelines.dll

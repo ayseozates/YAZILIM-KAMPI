@@ -21,5 +21,8 @@ namespace Business.Constants
         public static string CarCountOfColorError = "Aynı Renkten en fazla 10 araba olabilir";
         public static string CarNameAlreadyExists = "Bu isimde başka bir araba var";
         public static string ColorLimitExceded = "Color limiti aşıldığı için yeni araba eklenemiyor";
+        internal static string FailedCarImageAdd;
+        internal static string CarImageAdded;
+        internal static string DeletedCarImage;
     }
 }
