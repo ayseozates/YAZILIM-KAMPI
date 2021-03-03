@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Runtime.Serialization;
 using System.Text;
 
 namespace Business.Constants
@@ -24,5 +25,6 @@ namespace Business.Constants
         internal static string FailedCarImageAdd;
         internal static string CarImageAdded;
         internal static string DeletedCarImage;
+        internal static string AuthorizationDenied;
     }
 }
