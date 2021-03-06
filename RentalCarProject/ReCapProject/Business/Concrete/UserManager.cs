@@ -10,6 +10,7 @@ using System.Text;
 using System.Linq;
 using Business.ValidationRules.FluentValidation;
 using Core.Aspects.Autofac.Validation;
+using Core.Entities.Concrete;
 
 namespace Business.Concrete
 { 
@@ -21,13 +22,27 @@ namespace Business.Concrete
         {
             _userDal = userDal;
         }
-        [ValidationAspect(typeof(UserValidator))]
-        public IResult Add(User user)
-        {
+        //[ValidationAspect(typeof(UserValidator))]
+        //public IResult Add(User user)
+        //{
            
-                _userDal.Add(user);
-                return new SuccessResult(Messages.Added);
+        //        _userDal.Add(user);
+        //        return new SuccessResult(Messages.Added);
             
+        //}
+        public List<OperationClaim> GetClaims(User user)
+        {
+            return _userDal.GetClaims(user);
+        }
+
+        public void Add(User user)
+        {
+            _userDal.Add(user);
+        }
+
+        public User GetByMail(string email)
+        {
+            return _userDal.Get(u => u.Email == email);
         }
 
         public IResult Delete(User user)

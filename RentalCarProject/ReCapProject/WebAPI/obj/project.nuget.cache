@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "aeumJ5DTd9RdYHFpEfdcrptHP5p8hYpHydQgBfZl8hp3n+zsdrPjJDkuUeNTcrNJG7ZEBaTI1j+tjW1/+nJNsw==",
+  "dgSpecHash": "Ag6GNoBzxkpb8Ereiw81aVtMfJF1IYythBOirl7NwVi7DDXZgakXAZQ+7UvT4W2SRsUWca2shY+TrJdbBeOx5g==",
   "success": true,
   "projectFilePath": "D:\\YAZILIM KAMPI\\RentalCarProject\\ReCapProject\\WebAPI\\WebAPI.csproj",
   "expectedPackageFiles": [
@@ -9,6 +9,7 @@
     "C:\\Users\\dell\\.nuget\\packages\\autofac.extras.dynamicproxy\\6.0.0\\autofac.extras.dynamicproxy.6.0.0.nupkg.sha512",
     "C:\\Users\\dell\\.nuget\\packages\\castle.core\\4.4.0\\castle.core.4.4.0.nupkg.sha512",
     "C:\\Users\\dell\\.nuget\\packages\\fluentvalidation\\9.5.1\\fluentvalidation.9.5.1.nupkg.sha512",
+    "C:\\Users\\dell\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\3.1.12\\microsoft.aspnetcore.authentication.jwtbearer.3.1.12.nupkg.sha512",
     "C:\\Users\\dell\\.nuget\\packages\\microsoft.aspnetcore.hosting\\2.2.7\\microsoft.aspnetcore.hosting.2.2.7.nupkg.sha512",
     "C:\\Users\\dell\\.nuget\\packages\\microsoft.aspnetcore.hosting.abstractions\\2.2.0\\microsoft.aspnetcore.hosting.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\dell\\.nuget\\packages\\microsoft.aspnetcore.hosting.server.abstractions\\2.2.0\\microsoft.aspnetcore.hosting.server.abstractions.2.2.0.nupkg.sha512",

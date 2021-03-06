@@ -141,3 +141,4 @@ D:\YAZILIM KAMPI\RentalCarProject\ReCapProject\WebAPI\obj\Debug\netcoreapp3.1\We
 D:\YAZILIM KAMPI\RentalCarProject\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\FluentValidation.dll
 D:\YAZILIM KAMPI\RentalCarProject\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Http.Features.dll
 D:\YAZILIM KAMPI\RentalCarProject\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\System.IO.Pipelines.dll
+D:\YAZILIM KAMPI\RentalCarProject\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll

@@ -1,4 +1,5 @@
 ﻿using Business.Concrete;
+using Core.Entities.Concrete;
 using DataAccess.Concrete.EntityFramework;
 using DataAccess.Concrete.InMemory;
 using Entities.Concrete;
@@ -376,7 +377,7 @@ namespace ConsoleUI
                         email = Console.ReadLine();
                         Console.WriteLine("Şifre giriniz.");
                         password = Console.ReadLine();
-                        User user = new User { FirstName = ad, LastName = soyad, Email = email, Password = password };
+                        User user = new User { FirstName = ad, LastName = soyad, Email = email };
                         userManager.Add(user);
                         Console.WriteLine("Kullanıcı başarıyla eklendi.");
                         Console.WriteLine("Ana menüye dönmek ister misiniz? Evet==e||Hayır==h");
@@ -395,7 +396,7 @@ namespace ConsoleUI
                         int id = 0;
                         Console.WriteLine("Silmek istediğiniz kullanıcının Id değerini giriniz.");
                         id = Convert.ToInt32(Console.ReadLine());
-                        User user = new User { UserId = id };
+                        User user = new User { Id = id };
                         userManager.Delete(user);
                         Console.WriteLine("Kullanıcı başarıyla silindi.");
                         Console.WriteLine("Ana menüye dönmek ister misiniz? Evet==e||Hayır==h");
@@ -422,7 +423,7 @@ namespace ConsoleUI
                         email = Console.ReadLine();
                         Console.WriteLine("Şifre giriniz.");
                         password = Console.ReadLine();
-                        User user = new User { FirstName = ad, LastName = soyad, Email = email, Password = password };
+                        User user = new User { FirstName = ad, LastName = soyad, Email = email };
                         userManager.Update(user);
                         Console.WriteLine("Kullanıcı bilgileri başarıyla güncellenmiştir.");
                         Console.WriteLine("Ana menüye dönmek ister misiniz? Evet==e||Hayır==h");
@@ -439,7 +440,7 @@ namespace ConsoleUI
                     {
                         foreach (var user in userManager.GetAll().Data)
                         {
-                            Console.WriteLine("Id:" + user.UserId + "/" + user.FirstName + "/" + user.LastName + "/" + user.Email + "/" + user.Password);
+                            Console.WriteLine("Id:" + user.Id + "/" + user.FirstName + "/" + user.LastName + "/" + user.Email );
                             Console.WriteLine("---------------------------------------------");
                         }
                         Console.WriteLine("Ana menüye dönmek ister misiniz? Evet==e||Hayır==h");

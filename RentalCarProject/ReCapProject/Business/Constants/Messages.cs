@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Core.Entities.Concrete;
+using System;
 using System.Collections.Generic;
 using System.Runtime.Serialization;
 using System.Text;
@@ -22,9 +23,16 @@ namespace Business.Constants
         public static string CarCountOfColorError = "Aynı Renkten en fazla 10 araba olabilir";
         public static string CarNameAlreadyExists = "Bu isimde başka bir araba var";
         public static string ColorLimitExceded = "Color limiti aşıldığı için yeni araba eklenemiyor";
-        internal static string FailedCarImageAdd;
-        internal static string CarImageAdded;
-        internal static string DeletedCarImage;
-        internal static string AuthorizationDenied;
+        public static string FailedCarImageAdd = "Resim eklenemedi";
+        public static string CarImageAdded = "Araba resmi eklendi";
+        public static string DeletedCarImage = "Araba resmi silindi";
+        public static string AuthorizationDenied="Yetkiniz yok";
+        public static string SuccessfulLogin = "Başarılı Giriş";
+        public static string UserAlreadyExists = "Böyle bir kullanıcı mevcut";
+
+        public static string AccessTokenCreated = "Giirş olustu";
+        public static string UserRegistered = "User oluşturuldu";
+        public static string UserNotFound = "Kullanıcı bulunamadı";
+        public static string PasswordError = "Parola hatalı";
     }
 }

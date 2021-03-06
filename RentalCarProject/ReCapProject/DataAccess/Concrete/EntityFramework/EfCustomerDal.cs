@@ -16,8 +16,8 @@ namespace DataAccess.Concrete.EntityFramework
             using (ReCapProjectContext context=new ReCapProjectContext())
             {
                 var result = from c in context.Customers
-                             join u in context.Users on c.UserId equals u.UserId
-                             select new CustomerDetailDto {FirstName=u.FirstName,LastName=u.LastName,CompanyName=c.CompanyName,CustomerId=c.CustomerId,Email=u.Email,Password=u.Password };
+                             join u in context.Users on c.UserId equals u.Id
+                             select new CustomerDetailDto {FirstName=u.FirstName,LastName=u.LastName,CompanyName=c.CompanyName,CustomerId=c.CustomerId,Email=u.Email };
                            return result.ToList(); 
 
             }
