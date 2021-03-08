@@ -1,5 +1,8 @@
 using Business.Abstract;
 using Business.Concrete;
+using Core.DependencyResolvers;
+using Core.Extensions;
+using Core.Utilities.IoC;
 using Core.Utilities.Security.Encryption;
 using Core.Utilities.Security.JWT;
 using DataAccess.Abstract;
@@ -7,6 +10,7 @@ using DataAccess.Concrete.EntityFramework;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
@@ -34,7 +38,9 @@ namespace WebAPI
         public void ConfigureServices(IServiceCollection services)
         { //Autofac,Ninject,CastleWindsor,StructureMap,LightInject,DryInject----IoC Container
            // AOP
+
             services.AddControllers();
+           // services.AddSingleton<HttpContextAccessor, HttpContextAccessor>();14.gün
             var tokenOptions = Configuration.GetSection("TokenOptions").Get<TokenOptions>();
 
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
@@ -51,6 +57,8 @@ namespace WebAPI
                         IssuerSigningKey = SecurityKeyHelper.CreateSecurityKey(tokenOptions.SecurityKey)
                     };
                 });
+            services.AddDependencyResolvers(new ICoreModule[] {new CoreModule() });
+            //ServiceTool.Create(services);14.gün
             //services.AddSingleton<ICarService, CarManager>();//Bana arka planda // içinde data tutulmamalý// data olunca Add Scoped
             //services.AddSingleton<ICarDal, EfCarDal>();
             //services.AddSingleton<IColorService, ColorManager>();//Bana arka planda // içinde data tutulmamalý// data olunca Add Scoped
@@ -77,7 +85,7 @@ namespace WebAPI
 
             app.UseRouting();
             app.UseStaticFiles();
-
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
