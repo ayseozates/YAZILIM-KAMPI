@@ -40,6 +40,7 @@ namespace WebAPI
            // AOP
 
             services.AddControllers();
+            services.AddCors();
            // services.AddSingleton<HttpContextAccessor, HttpContextAccessor>();14.gün
             var tokenOptions = Configuration.GetSection("TokenOptions").Get<TokenOptions>();
 
@@ -80,7 +81,7 @@ namespace WebAPI
             {
                 app.UseDeveloperExceptionPage();
             }
-
+            app.UseCors(builder=>builder.WithOrigins("http://localhost:4200").AllowAnyHeader());
             app.UseHttpsRedirection();
 
             app.UseRouting();

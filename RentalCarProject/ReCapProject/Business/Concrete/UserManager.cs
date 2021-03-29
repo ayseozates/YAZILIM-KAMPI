@@ -23,22 +23,22 @@ namespace Business.Concrete
             _userDal = userDal;
         }
         //[ValidationAspect(typeof(UserValidator))]
-        //public IResult Add(User user)
-        //{
+        public IResult Add(User user)
+        {
            
-        //        _userDal.Add(user);
-        //        return new SuccessResult(Messages.Added);
+                _userDal.Add(user);
+               return new SuccessResult(Messages.Added);
             
-        //}
+        }
         public List<OperationClaim> GetClaims(User user)
         {
             return _userDal.GetClaims(user);
         }
 
-        public void Add(User user)
-        {
-            _userDal.Add(user);
-        }
+        //public void Add(User user)
+        //{
+        //    _userDal.Add(user);
+        //}
 
         public User GetByMail(string email)
         {

@@ -70,7 +70,7 @@ namespace Business.Concrete
             // markasına göre tek bir araç döndürür.
             return new SuccessDataResult<Car>(_carDal.Get(c => c.Id ==carId));
         }
-        [CacheAspect]
+        //[CacheAspect]
         public IDataResult<List<Car>> GetAll()
         {
            

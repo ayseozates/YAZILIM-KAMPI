@@ -20,5 +20,6 @@ namespace Business.Abstract
         IResult Update(Car car);
         IResult Delete(Car car);
         IResult AddTransactionalTest(Car car);
+        //IDataResult<List<Car>> GetByBrand(int brandId);
     }
 }

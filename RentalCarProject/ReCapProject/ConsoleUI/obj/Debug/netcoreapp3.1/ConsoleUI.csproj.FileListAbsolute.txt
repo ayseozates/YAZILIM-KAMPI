@@ -144,3 +144,12 @@ D:\YAZILIM KAMPI\RentalCarProject\ReCapProject\ConsoleUI\obj\Debug\netcoreapp3.1
 D:\YAZILIM KAMPI\RentalCarProject\ReCapProject\ConsoleUI\obj\Debug\netcoreapp3.1\ConsoleUI.dll
 D:\YAZILIM KAMPI\RentalCarProject\ReCapProject\ConsoleUI\obj\Debug\netcoreapp3.1\ConsoleUI.pdb
 D:\YAZILIM KAMPI\RentalCarProject\ReCapProject\ConsoleUI\obj\Debug\netcoreapp3.1\ConsoleUI.genruntimeconfig.cache
+D:\YAZILIM KAMPI\RentalCarProject\ReCapProject\ConsoleUI\bin\Debug\netcoreapp3.1\Microsoft.Build.dll
+D:\YAZILIM KAMPI\RentalCarProject\ReCapProject\ConsoleUI\bin\Debug\netcoreapp3.1\Microsoft.Build.Framework.dll
+D:\YAZILIM KAMPI\RentalCarProject\ReCapProject\ConsoleUI\bin\Debug\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
+D:\YAZILIM KAMPI\RentalCarProject\ReCapProject\ConsoleUI\bin\Debug\netcoreapp3.1\System.Drawing.Common.dll
+D:\YAZILIM KAMPI\RentalCarProject\ReCapProject\ConsoleUI\bin\Debug\netcoreapp3.1\System.Windows.Extensions.dll
+D:\YAZILIM KAMPI\RentalCarProject\ReCapProject\ConsoleUI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\YAZILIM KAMPI\RentalCarProject\ReCapProject\ConsoleUI\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\YAZILIM KAMPI\RentalCarProject\ReCapProject\ConsoleUI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\YAZILIM KAMPI\RentalCarProject\ReCapProject\ConsoleUI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
